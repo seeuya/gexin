@@ -56,7 +56,7 @@ if ( ! function_exists( 'thinkup_themesetup' ) ) {
 		add_theme_support( 'title-tag' );
 
 		// Add support for custom header
-		$args = apply_filters( 'custom-header', array( 'height' => 200, 'width'  => 1600 ) );
+		$args = apply_filters( 'custom-header', array( 'height' => 60, 'width'  => 1200 ) );
 		add_theme_support( 'custom-header', $args );
 
 		// Add WooCommerce functions.

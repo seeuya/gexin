@@ -828,7 +828,7 @@ function redux_setup_framework_options(){
 				'fold' => array('thinkup_header_twitterswitch'=>1),
 				),
 				
-			/* Sina social settings */
+			/* Weibo social settings */
 			array(
 				'title' => __('Weibo', 'redux-framework'), 
 				'subtitle' => __('Enable link to Weibo profile.', 'redux-framework'),
@@ -839,7 +839,7 @@ function redux_setup_framework_options(){
 				
 			array(
 				'desc' => __('Input the url to your Weibo page. <strong>Note:</strong> Add http:// as the url is an external link.', 'redux-framework'),
-				'id'=>'thinkup_header_twitterlink',
+				'id'=>'thinkup_header_weibolink',
 				'type' => 'text',
 				'validate' => 'url',
 				'fold' => array('thinkup_header_weiboswitch'=>1),

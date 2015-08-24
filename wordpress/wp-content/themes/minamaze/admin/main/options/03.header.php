@@ -38,6 +38,7 @@ function thinkup_input_socialmessage(){
 global $thinkup_header_socialmessage;
 global $thinkup_header_facebookswitch;
 global $thinkup_header_twitterswitch;
+global $thinkup_header_weiboswitch;
 global $thinkup_header_googleswitch;
 global $thinkup_header_linkedinswitch;
 global $thinkup_header_flickrswitch;
@@ -45,7 +46,7 @@ global $thinkup_header_youtubeswitch;
 global $thinkup_header_rssswitch;
 global $thinkup_header_diggswitch;
 
-	if ( empty( $thinkup_header_facebookswitch ) and empty( $thinkup_header_twitterswitch ) and empty( $thinkup_header_googleswitch ) and empty( $thinkup_header_linkedinswitch ) and empty( $thinkup_header_flickrswitch ) and empty( $thinkup_header_youtubeswitch ) and empty( $thinkup_header_rssswitch ) and empty( $thinkup_header_diggswitch ) ) {	
+	if ( empty( $thinkup_header_facebookswitch ) and empty( $thinkup_header_twitterswitch ) and empty( $thinkup_header_weiboswitch ) and empty( $thinkup_header_googleswitch ) and empty( $thinkup_header_linkedinswitch ) and empty( $thinkup_header_flickrswitch ) and empty( $thinkup_header_youtubeswitch ) and empty( $thinkup_header_rssswitch ) and empty( $thinkup_header_diggswitch ) ) {	
 		return '';
 	} else if ( ! empty( $thinkup_header_socialmessage ) ) {	
 		return esc_html( $thinkup_header_socialmessage );
@@ -76,6 +77,16 @@ global $thinkup_header_twittercustomicon;
 
 	if ( $thinkup_header_twittericonswitch == '1' and ! empty( $thinkup_header_twittercustomicon ) ) {
 		return '#pre-header-social .twitter a { background: url("' . $thinkup_header_twittercustomicon . '") no-repeat center; background-size: 20px; }' . "\n";
+	}
+}
+
+/* Weibo - Custom Icon */
+function thinkup_input_weiboicon(){
+global $thinkup_header_weiboiconswitch;
+global $thinkup_header_weibocustomicon;
+
+	if ( $thinkup_header_weiboiconswitch == '1' and ! empty( $thinkup_header_weibocustomicon ) ) {
+		return '#pre-header-social .weibo a { background: url("' . $thinkup_header_weibocustomicon . '") no-repeat center; background-size: 20px; }' . "\n";
 	}
 }
 
@@ -136,6 +147,7 @@ function thinkup_input_socialicon(){
 
 	$output .= thinkup_input_facebookicon();
 	$output .= thinkup_input_twittericon();
+	$output .= thinkup_input_weiboicon();
 	$output .= thinkup_input_googleicon();
 	$output .= thinkup_input_linkedinicon();
 	$output .= thinkup_input_flickricon();
@@ -160,6 +172,8 @@ global $thinkup_header_facebookswitch;
 global $thinkup_header_facebooklink;
 global $thinkup_header_twitterswitch;
 global $thinkup_header_twitterlink;
+global $thinkup_header_weiboswitch;
+global $thinkup_header_weibolink;
 global $thinkup_header_googleswitch;
 global $thinkup_header_googlelink;
 global $thinkup_header_linkedinswitch;
@@ -190,6 +204,13 @@ global $thinkup_header_rsslink;
 			if ( $thinkup_header_twitterswitch == '1' ) {
 				echo '<li class="social twitter"><a href="' . esc_url( $thinkup_header_twitterlink ) . '" data-tip="bottom" data-original-title="Twitter">',
 					 '<i class="icon-twitter"></i>',
+					 '</a></li>';
+			}
+			
+			/* Weibo settings */
+			if ( $thinkup_header_weiboswitch == '1' ) {
+				echo '<li class="social weibo"><a href="' . esc_url( $thinkup_header_weibolink ) . '" data-tip="bottom" data-original-title="微博">',
+					 '<i class="icon-weibo"></i>',
 					 '</a></li>';
 			}
 

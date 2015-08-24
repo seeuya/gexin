@@ -72,6 +72,12 @@ function thinkup_reduxvariables() {
 	$GLOBALS['thinkup_header_twitterlink']                  = thinkup_var ( 'thinkup_header_twitterlink' );
 	$GLOBALS['thinkup_header_twittericonswitch']            = thinkup_var ( 'thinkup_header_twittericonswitch' );
 	$GLOBALS['thinkup_header_twittercustomicon']            = thinkup_var ( 'thinkup_header_twittercustomicon', 'url' );
+	
+	$GLOBALS['thinkup_header_weiboswitch']                	= thinkup_var ( 'thinkup_header_weiboswitch' );
+	$GLOBALS['thinkup_header_weibolink']                  	= thinkup_var ( 'thinkup_header_weibolink' );
+	$GLOBALS['thinkup_header_weiboiconswitch']            	= thinkup_var ( 'thinkup_header_weiboiconswitch' );
+	$GLOBALS['thinkup_header_weibocustomicon']           	= thinkup_var ( 'thinkup_header_weibocustomicon', 'url' );
+	
 	$GLOBALS['thinkup_header_googleswitch']                 = thinkup_var ( 'thinkup_header_googleswitch' );
 	$GLOBALS['thinkup_header_googlelink']                   = thinkup_var ( 'thinkup_header_googlelink' );
 	$GLOBALS['thinkup_header_googleiconswitch']             = thinkup_var ( 'thinkup_header_googleiconswitch' );

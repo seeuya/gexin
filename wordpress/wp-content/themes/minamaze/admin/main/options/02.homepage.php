@@ -151,6 +151,29 @@ $count = 0;
 	}
 }
 
+// Add ThinkUpTopMain
+function thinkup_top_main() {
+	if ( ! is_front_page() ) {
+		echo '<div id="content"><div id="content-core"><div id="main">';	
+		
+		thinkup_custom_intro();
+
+		echo '<div id="main-core">';
+		}
+}
+
+// Add ThinkUpBottomMain()
+function thinkup_bottom_main() {
+	if ( ! is_front_page() ) {
+		echo '</div></div>';	
+		
+		thinkup_sidebar_html();
+
+		echo '</div></div>';
+		}
+}
+		
+
 // Add ThinkUpSlider Height - Inner Page
 function thinkup_input_sliderpageheight() {
 global $post;

@@ -8,12 +8,7 @@
  */
 ?>
 
-		</div><!-- #main-core -->
-		</div><!-- #main -->
-		<?php /* Sidebar */ thinkup_sidebar_html(); ?>
-	</div>
-	</div><!-- #content -->
-
+<?php thinkup_bottom_main(); ?>
 	<footer>
 		<?php /* Custom Footer Layout */ thinkup_input_footerlayout();
 		echo	'<!-- #footer -->';  ?>

@@ -1171,6 +1171,7 @@ color: #FFF;
 ----------------------------------------------------------------------------- */
 #intro.option1 {
 	margin-bottom: 25px;
+	padding-left: 20px;
 }
 #intro.option1 #intro-core {
 	position: relative;
@@ -2318,7 +2319,7 @@ padding: 0;
 	padding: 20px;
 	margin-bottom: 30px;
 	background: #fff;
-	border: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
 }
 .blog-article .entry-header {
 	margin-bottom: 0;
@@ -2825,8 +2826,8 @@ h4.project-title {
 }
 #main {
 	background: #FFF;
-	padding: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
 }
 #gexin {
-	padding:20px;
+	padding:30px;
 }

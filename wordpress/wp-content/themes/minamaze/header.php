@@ -14,6 +14,10 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <meta name="baidu-site-verification" content="zXFQouZIn4" />
+<meta name="description" itemprop="description" content="广东格新律师事务所" />
+<meta name="keywords" itemprop="keywords" content="广东格新律师事务所,广州南沙,知识产权纠纷" />
+<link rel="canonical" href="http://gexinlaw.com/" />
+<link rel="apple-touch-icon" href="<?php $thinkup_general_faviconlink ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>

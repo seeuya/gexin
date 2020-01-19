@@ -226,7 +226,7 @@ global $footer_w6;
 function thinkup_input_copyright() {
 global $thinkup_footer_copyright;
 
-	printf( __( '%1$s %2$s %3$s', 'lan-thinkupthemes' ) , '© 2015 广东格新律师事务所', '版权所有', '<a href="//www.miitbeian.gov.cn/" target="_blank">粤ICP备15082323号</a>'); 
+	printf( __( '%1$s %2$s %3$s', 'lan-thinkupthemes' ) , '© 2015 广东格新律师事务所', '版权所有', '<a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备15082323号</a>'); 
 }
 
 
